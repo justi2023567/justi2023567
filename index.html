@@ -1,29 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="user-scalable=no">
-        <link rel="icon" href="icon/icon.png" type="image/png">
-        <link rel="apple-touch-icon" href="icon/icon.png">
-        <link rel="stylesheet" type="text/css" href="fonts/gamefont.css">
-        <title>experiment</title>
-    </head>
-    <body style="background-color: black">
-        <script type="text/javascript" src="js/libs/pixi.js"></script>
-        <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
-        <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
-        <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
-        <script type="text/javascript" src="js/libs/lz-string.js"></script>
-        <script type="text/javascript" src="js/libs/iphone-inline-video.browser.js"></script>
-        <script type="text/javascript" src="js/rpg_core.js"></script>
-        <script type="text/javascript" src="js/rpg_managers.js"></script>
-        <script type="text/javascript" src="js/rpg_objects.js"></script>
-        <script type="text/javascript" src="js/rpg_scenes.js"></script>
-        <script type="text/javascript" src="js/rpg_sprites.js"></script>
-        <script type="text/javascript" src="js/rpg_windows.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thumbs Panel</title>
+    <style media="screen">
+      div {
+        border: 1px solid black;
+        background: yellow;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      #content {
+        border: 2px dotted red;
+        width: 80%;
+        margin: auto;
+        background-color: blue;
+      }
+      #headerBox {
+      border: 4px dotted red;
+      }
+      .linksBox {
+      border: 4px dotted red;
+      background-color: green;
+      }
+      /* Comebine Selctors */
+      .linksBox, .textBox {
+        border-radius: 15px;
+      }
+      /* Selector for all textBoxes */
+      .textBox {
+        overflow: auto;
+      }
+      /* Selector for only images inside of textBoxes */
+      .textBox img {
+        width: 15%;
+        clear: both;
+      }
+      .f-left {
+        float: left;
+      }
+      .f-right {
+        float: right;
+      }
+      a {
+
+      }
+      a:visited {
+
+      }
+      a:hover {
+
+      }
+
+    @media (max-width: 600px) {
+     #content {
+      width: 100%;
+     }
+   }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <div id="headerBox">
+        <h1>Thumbs Panel</h1>
+      </div>
+      <div class="linksBox">
+  <p>Ths is a panel to control the Formbar.</p>
+    <p><a href="http://172.21.3.4:5000/tutd?thumb=up">Thumbs Up</a></p>
+    <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">Thumbs Wiggle</a></p>
+    <p><a href="http://172.21.3.4:5000/tutd?thumb=down">Thumbs Down</a></p>
+  </div>
+  <div class="textBox">
+    <img class="f-left"src="img/linus.jpg" alt="Linus"/>
+    <p>Hello! im linus tech tips i need your personal imformation.</p>
+    <img class="f-right"src="img/fatlinus.jpg" alt="Fat linus">
+    <p>Im fat linus im just fat thats the joke.</p>
+    <img class="f-left"src="img/scam.jpg" alt="Scam pop up">
+    <p>Sir we need your imformation we cant tell you why.</p>
+  </div>
+  <div class="linksBox">
+    <p><a href="game.html">My Game</a></p>
+    <p><a href="http://172.21.3.4:5000/color?hex=5df542">color</a></p>
+    <p><a href="http://172.21.3.4:5000/perc?amount=50">50%</a></p>
+    <p><a href="http://172.21.3.4:5000/bgm?file=<jojo5>&volume=<0.5>">jojo5</a></p>
+    <p><a href="http://172.21.3.4:5000/say?phrase='hello'">hello</a></p>
+  </div>
+</div>
+  </body>
 </html>
